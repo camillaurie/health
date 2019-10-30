@@ -1,88 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>
-            Тестовое задание
-        </title>
-        <link href="./dist/styles/main.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__logo">
-                <img alt="" src="./dist/images/my-health-rus.svg">
-            </div>
-            <div class="header__download-apps">
-                <img alt="" src="./dist/images/play-store.svg">
-                <img alt="" src="./dist/images/app-store.svg">
-            </div>
-            <div class="header__mir-logo">
-                <img alt="" src="./dist/images/invalid-name.svg">
-            </div>
-            <div class="header__menu">
-                <img alt="" src="./dist/images/menu.svg">
-            </div>
-        </header>
-        <div class="annotation">
-            <div class="annotation__text">
-                <h2 class="annotation__heading">
-                    Все данные о вашем здоровье в одном приложении
-                </h2>
-                <p class="annotation__paragraph">
-                    Универсальная электронная медицинская карта и сервис для дистанционного сопровождения пациентов, которая решает следующие проблемы:
-                </p>
-                <ul class="annotation__list">
-                    <li class="annotation__list-item"><img class="annotation__list-image" alt="" src="./src/images/image.svg">Все необходимое в одном месте</li>
-                    <li class="annotation__list-item"><img class="annotation__list-image" alt="" src="./src/images/image2.svg">Разработано врачами</li>
-                    <li class="annotation__list-item"><img class="annotation__list-image" alt="" src="./src/images/image1.svg">Безопасность данных</li>
-                    <li class="annotation__list-item"><img class="annotation__list-image" alt="" src="./src/images/image3.svg">Бесплатное приложение</li>
-                </ul>
-            </div>
-            <div class="annotation__phones">
-                <div class="annotation__phone-images">
-                    <img alt="" src="./src/images/iphone-mobile.png">
-                    <img alt="" src="./src/images/android-mobile.png">
-                </div>
-                <div class="annotation__checkboxes">
-                    <form>
-                        <label><input type="checkbox">iOS</label>
-                        <label><input type="checkbox">Android</label>
-                    </form>
-                </div>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Тестовое задание
+    </title>
+    <link href="./dist/styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="content-wrapper header__wrapper">
+        <div class="header__logo">
+          <img alt="" src="./dist/images/my-health-rus.svg" />
         </div>
-        <div class="capabilities">
-            <h2 class="capabilities__heading">
-                Возможности приложения
-            </h2>
-            <div class="capabilities__list">
-                <li><img alt="" src="./src/images/img1.svg">Контроль показателей своего здоровья </li>
-                <li><img alt="" src="./src/images/img2.svg">Храниние медицинских документов</li>
-                <li><img alt="" src="./src/images/img3.svg">Календарь менструального цикла</li>
-                <li><img alt="" src="./src/images/img4.svg">Актуальные новости</li>
-                <li><img alt="" src="./src/images/img5.svg">Создание курсов приема лекарств</li>
-                <li><img alt="" src="./src/images/img6.svg">Создание напоминаний</li>
-                <li><img alt="" src="./src/images/img7.svg">Дневник течения беременности</li>
-                <li><img alt="" src="./src/images/img8.svg">Консультации врачей онлайн</li>
-            </div>
+        <div class="header__download-apps">
+          <img alt="" src="./dist/images/play-store.svg" />
+          <img alt="" src="./dist/images/app-store.svg" />
         </div>
-        <div class="control">
-            <div class="control__text">
-                <h2 class="control__heading">
-                    Контролируйте показатели своего здоровья
-                </h2>
-                <ul class="control__list">
-                    <li class="control__list-item">Артериальное давление</li>
-                    <li class="control__list-item">Частота сердечных сокращений</li>
-                    <li class="control__list-item">Сахар в крови</li>
-                    <li class="control__list-item">Вес</li>
-                    <li class="control__list-item">Рост</li>
-                    <li class="control__list-item">Температура</li>
-                    <li class="control__list-item">Произвольные показатели</li>
-                </ul>
-            </div>
-            <div class="control__slider">
-                <img alt="" src="./src/images/mob.jpg">
-            </div>
+        <div class="header__mir-logo">
+          <img alt="" src="./dist/images/invalid-name.svg" />
         </div>
-    </body>
+        <div class="header__menu">
+          <img alt="" src="./dist/images/menu.svg" />
+        </div>
+      </div>
+    </header>
+    <div class="annotation">
+      <div class="content-wrapper annotation__wrapper">
+        <div class="annotation__text">
+          <h2 class="annotation__heading">
+            Все данные о вашем здоровье в одном приложении
+          </h2>
+          <p class="annotation__paragraph">
+            Универсальная электронная медицинская карта и сервис для
+            дистанционного сопровождения пациентов, которая решает следующие
+            проблемы:
+          </p>
+          <ul class="annotation__list">
+            <li class="annotation__list-item">
+              <img
+                class="annotation__list-image"
+                alt=""
+                src="./src/images/image.svg"
+              />Все необходимое в&nbsp;одном месте
+            </li>
+            <li class="annotation__list-item">
+              <img
+                class="annotation__list-image"
+                alt=""
+                src="./src/images/image2.svg"
+              />Разработано врачами
+            </li>
+            <li class="annotation__list-item">
+              <img
+                class="annotation__list-image"
+                alt=""
+                src="./src/images/image1.svg"
+              />Безопасность данных
+            </li>
+            <li class="annotation__list-item">
+              <img
+                class="annotation__list-image"
+                alt=""
+                src="./src/images/image3.svg"
+              />Бесплатное приложение
+            </li>
+          </ul>
+        </div>
+        <div class="annotation__phones-slider">
+          <div class="annotation__phone-images-list">
+            <img
+              class="annotation__iphone annotation__phone-image"
+              alt=""
+              src="./src/images/iphone-mobile.png"
+            />
+            <img
+              class="annotation__android annotation__phone-image annotation__phone-image--active"
+              alt=""
+              src="./src/images/android-mobile.png"
+            />
+          </div>
+          <div class="annotation__checkboxes">
+            <form>
+              <label
+                ><input
+                  class="annotation__checkbox"
+                  type="checkbox"
+                />Android</label
+              >
+              <label
+                ><input
+                  class="annotation__checkbox annotation__checkbox--active"
+                  type="checkbox"
+                />iOS</label
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="capabilities">
+      <div class="content-wrapper">
+        <h2 class="capabilities__heading">
+          Возможности приложения
+        </h2>
+        <div class="capabilities__list">
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img1.svg"
+            />Контроль показателей своего здоровья
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img2.svg"
+            />Храниние медицинских документов
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img3.svg"
+            />Календарь менструального цикла
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img4.svg"
+            />Актуальные новости
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img5.svg"
+            />Создание курсов приема лекарств
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img6.svg"
+            />Создание напоминаний
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img7.svg"
+            />Дневник течения беременности
+          </li>
+          <li class="capabilities__list-item">
+            <img
+              class="capabilities__list-image"
+              alt=""
+              src="./src/images/img8.svg"
+            />Консультации врачей онлайн
+          </li>
+        </div>
+      </div>
+    </div>
+    <div class="control">
+      <div class="content-wrapper control__wrapper">
+        <div class="control__text">
+          <h2 class="control__heading">
+            Контролируйте показатели своего здоровья
+          </h2>
+          <ul class="control__list">
+            <li class="control__list-item">Артериальное давление</li>
+            <li class="control__list-item">Частота сердечных сокращений</li>
+            <li class="control__list-item">Сахар в крови</li>
+            <li class="control__list-item">Вес</li>
+            <li class="control__list-item">Рост</li>
+            <li class="control__list-item">Температура</li>
+            <li class="control__list-item">Произвольные показатели</li>
+          </ul>
+        </div>
+        <div class="control__slider slider">
+          <img alt="" width="100%" src="./src/images/mob.jpg" />
+          <div class="slider__arrows">
+            <img
+              alt=""
+              src="./src/images/left-arrow.svg"
+              class="slider__arrow slider__left-arrow"
+            />
+            <img
+              alt=""
+              src="./src/images/right-arrow.svg"
+              class="slider__arrow slider__right-arrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content-wrapper footer__wrapper">
+        <img alt="" src="./src/images/footer-logo.svg" />
+        <p class="footer__text">
+          EN / RU
+          <br />
+          Моё Здоровье
+          <br />
+          2016–2019 © ООО «МИР»
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
