@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="15" viewBox="0 0 53 15">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#F26A35"/>
+            <stop offset="100%" stop-color="#EE3048"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="53" height="15" fill="url(#a)" rx="7.5"/>
+        <text fill="#FFF" font-family="Roboto-Bold, Roboto" font-size="12" font-weight="bold">
+            <tspan x="9" y="11">Скоро</tspan>
+        </text>
+    </g>
+</svg>

@@ -6,22 +6,18 @@
       Тестовое задание
     </title>
     <link href="./dist/styles/main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="content-wrapper header__wrapper">
-        <div class="header__logo">
-          <img alt="" src="./dist/images/my-health-rus.svg" />
-        </div>
-        <div class="header__download-apps">
-          <img alt="" src="./dist/images/play-store.svg" />
-          <img alt="" src="./dist/images/app-store.svg" />
-        </div>
-        <div class="header__mir-logo">
-          <img alt="" src="./dist/images/invalid-name.svg" />
-        </div>
-        <div class="header__menu">
-          <img alt="" src="./dist/images/menu.svg" />
+        <img class="header__logo" alt="" src="./dist/images/my-health-rus.svg" />
+        <div class="header__links-block">
+          <div class="header__download-apps">
+            <img class="header__download-app" alt="" src="./dist/images/play-store.svg" />
+            <img class="header__download-app" alt="" src="./dist/images/app-store.svg" />
+          </div>
+          <img class="header__mir-logo" alt="" src="./dist/images/invalid-name.svg" />
         </div>
       </div>
     </header>
@@ -66,36 +62,44 @@
               />Бесплатное приложение
             </li>
           </ul>
-        </div>
-        <div class="annotation__phones-slider">
-          <div class="annotation__phone-images-list">
-            <img
-              class="annotation__iphone annotation__phone-image"
-              alt=""
-              src="./src/images/iphone-mobile.png"
-            />
-            <img
-              class="annotation__android annotation__phone-image annotation__phone-image--active"
-              alt=""
-              src="./src/images/android-mobile.png"
-            />
+          <div class="annotation__download-apps">
+            <a href="#"><img class="annotation__download-image" alt="" src="./src/images/app-store.svg"></a>
+            <a href="#"><img class="annotation__download-image" alt="" src="./src/images/play-store.svg"></a>
           </div>
+        </div>
           <div class="annotation__checkboxes">
             <form>
-              <label
-                ><input
-                  class="annotation__checkbox"
-                  type="checkbox"
-                />Android</label
-              >
-              <label
-                ><input
-                  class="annotation__checkbox annotation__checkbox--active"
-                  type="checkbox"
-                />iOS</label
-              >
-            </form>
+              <div class="annotation__phones-slider">
+                <div class="annotation__phone-images-list">
+                  <div class="annotation__phone-item">
+                    <img
+                      class="annotation__iphone annotation__phone-image"
+                      alt=""
+                      src="./src/images/iphone-mobile.png"
+                    />
+                    <input
+                        class="annotation__checkbox"
+                        type="radio" name="mobile-OS" value="iOS" id="iOS"
+                      /><label for="iOS"
+                      >iOS</label
+                    >
+                    </div>
+                    <div class="annotation__phone-item">
+                  <img
+                    class="annotation__android annotation__phone-image annotation__phone-image--active"
+                    alt=""
+                    src="./src/images/android-mobile.png"
+                  />
+                  <input
+                      class="annotation__checkbox annotation__checkbox--active"
+                      type="radio" name="mobile-OS" value="android" id="android"
+                    /><label for="android"
+                    >Android</label
+                  >
+                  </div>
+              </div>
           </div>
+            </form>
         </div>
       </div>
     </div>
@@ -105,61 +109,21 @@
           Возможности приложения
         </h2>
         <div class="capabilities__list">
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img1.svg"
-            />Контроль показателей своего здоровья
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img1.svg"><span class="capabilities__list-text">Контроль показателей своего здоровья</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img2.svg"
-            />Храниние медицинских документов
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img2.svg"><span class="capabilities__list-text">Храниние медицинских документов</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img3.svg"
-            />Календарь менструального цикла
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img3.svg"><span class="capabilities__list-text">Календарь менструального цикла</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img4.svg"
-            />Актуальные новости
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img4.svg"><span class="capabilities__list-text">Актуальные новости</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img5.svg"
-            />Создание курсов приема лекарств
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img5.svg"><span class="capabilities__list-text">Создание курсов приема лекарств</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img6.svg"
-            />Создание напоминаний
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img6.svg"><span class="capabilities__list-text">Создание напоминаний</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img7.svg"
-            />Дневник течения беременности
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img7.svg"><span class="capabilities__list-text">Дневник течения беременности</span>
           </li>
-          <li class="capabilities__list-item">
-            <img
-              class="capabilities__list-image"
-              alt=""
-              src="./src/images/img8.svg"
-            />Консультации врачей онлайн
+          <li class="capabilities__list-item"><img class="capabilities__list-image" alt="" src="./src/images/img8.svg"><span class="capabilities__list-text capabilities__list-text--soon">Консультации<br>врачей онлайн</span>
           </li>
         </div>
       </div>
@@ -168,16 +132,20 @@
       <div class="content-wrapper control__wrapper">
         <div class="control__text">
           <h2 class="control__heading">
-            Контролируйте показатели своего здоровья
+            Контролируйте<br>показатели своего<br>здоровья
           </h2>
           <ul class="control__list">
-            <li class="control__list-item">Артериальное давление</li>
-            <li class="control__list-item">Частота сердечных сокращений</li>
-            <li class="control__list-item">Сахар в крови</li>
-            <li class="control__list-item">Вес</li>
-            <li class="control__list-item">Рост</li>
-            <li class="control__list-item">Температура</li>
-            <li class="control__list-item">Произвольные показатели</li>
+            <div class="control__list-part">
+              <li class="control__list-item">Вес</li>
+              <li class="control__list-item">Рост</li>
+              <li class="control__list-item">Температура</li>
+              <li class="control__list-item">Произвольные показатели</li>
+            </div>
+            <div class="control__list-part">
+              <li class="control__list-item">Артериальное давление</li>
+              <li class="control__list-item">Сахар в крови</li>
+              <li class="control__list-item">Частота сердечных сокращений</li>
+            </div>
           </ul>
         </div>
         <div class="control__slider slider">
@@ -199,7 +167,7 @@
     </div>
     <footer class="footer">
       <div class="content-wrapper footer__wrapper">
-        <img alt="" src="./src/images/footer-logo.svg" />
+        <img class="footer__logo" alt="" src="./src/images/footer-logo.svg" />
         <p class="footer__text">
           EN / RU
           <br />
