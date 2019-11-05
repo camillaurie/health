@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       Тестовое задание
     </title>
@@ -67,36 +68,32 @@
             <a href="#"><img class="annotation__download-image" alt="" src="./src/images/play-store.svg"></a>
           </div>
         </div>
-          <div class="annotation__checkboxes">
+          <div class="annotation__radio-buttons">
             <form>
               <div class="annotation__phones-slider">
                 <div class="annotation__phone-images-list">
-                  <div class="annotation__phone-item">
+                  <input
+                    class="annotation__radio-button"
+                    type="radio" name="mobile-OS" value="android" id="android" checked
+                  />
+                  <input
+                    class="annotation__radio-button"
+                    type="radio" name="mobile-OS" value="iOS" id="iOS"
+                  />
+                  <label for="iOS" class="annotation__phone-item" id="slide-ios">
                     <img
                       class="annotation__iphone annotation__phone-image"
                       alt=""
                       src="./src/images/iphone-mobile.png"
                     />
-                    <input
-                        class="annotation__checkbox"
-                        type="radio" name="mobile-OS" value="iOS" id="iOS"
-                      /><label for="iOS"
-                      >iOS</label
-                    >
-                    </div>
-                    <div class="annotation__phone-item">
-                  <img
-                    class="annotation__android annotation__phone-image annotation__phone-image--active"
-                    alt=""
-                    src="./src/images/android-mobile.png"
-                  />
-                  <input
-                      class="annotation__checkbox annotation__checkbox--active"
-                      type="radio" name="mobile-OS" value="android" id="android"
-                    /><label for="android"
-                    >Android</label
-                  >
-                  </div>
+                  </label>
+                  <label for="android" class="annotation__phone-item" id="slide-android">
+                    <img
+                      class="annotation__android annotation__phone-image"
+                      alt=""
+                      src="./src/images/android-mobile.png"
+                    />
+                  </label>
               </div>
           </div>
             </form>
@@ -132,7 +129,7 @@
       <div class="content-wrapper control__wrapper">
         <div class="control__text">
           <h2 class="control__heading">
-            Контролируйте<br>показатели своего<br>здоровья
+            Контролируйте показатели своего здоровья
           </h2>
           <ul class="control__list">
             <div class="control__list-part">
