@@ -106,6 +106,7 @@
 
     @media screen and (max-width: 1230px) {
       display: block;
+      padding-bottom: 245px;
     }
   }
 
@@ -242,6 +243,46 @@
   &__radio-button {
     display: none;
   }
+
+  &__visible-buttons {
+  color: #757575;
+  position: absolute;
+  font-size: 24px;
+  top: 814px;
+
+    @media screen and (max-width: 1230px) {
+      font-size: 16px;
+      top: 170px;
+    }
+
+    @media screen and (max-width: 768px) {
+      top: 420px;
+    }
+  }
+
+  &__iOS-button {
+    left: 282px;
+
+    @media screen and (max-width: 1230px) {
+      left: 358px;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 53px;
+    }
+  }
+
+  &__android-button {
+    left: 468px;
+
+    @media screen and (max-width: 1230px) {
+      left: 463px;
+    }
+
+    @media screen and (max-width: 768px) {
+      left: 178px;
+    }
+  }
 }
 
 // Header slider
@@ -253,7 +294,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    transform: translate3d(95px, 60px, -97px);
+    transform: translate3d(125px, 60px, -97px);
   }
 }
 
@@ -265,7 +306,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    transform: translate3d(-45px, 15px, 0);
+    transform: translate3d(-15px, 15px, 0);
   }
 }
 
@@ -293,6 +334,79 @@
   }
 }
 
+#android:checked ~ #iosButton::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 13px;
+  border: 2px solid #757575;
+
+  @media screen and (max-width: 1230px) {
+    width: 4px;
+    height: 4px;
+    margin-bottom: 13px;
+    margin-left: 7px;
+  }
+}
+
+#android:checked ~ #androidButton::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 41px;
+  border: 2px solid #757575;
+  background-color: #757575;
+
+  @media screen and (max-width: 1230px) {
+    width: 4px;
+    height: 4px;
+    margin-bottom: 13px;
+    margin-left: 25px;
+  }
+}
+
+#iOS:checked ~ #iosButton::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 13px;
+  border: 2px solid #757575;
+  background-color: #757575;
+
+  @media screen and (max-width: 1230px) {
+    width: 4px;
+    height: 4px;
+    margin-bottom: 13px;
+    margin-left: 7px;
+  }
+}
+
+#iOS:checked ~ #androidButton::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 14px;
+  margin-left: 41px;
+  border: 2px solid #757575;
+
+  @media screen and (max-width: 1230px) {
+    width: 4px;
+    height: 4px;
+    margin-bottom: 13px;
+    margin-left: 25px;
+  }
+}
 
 .capabilities {
   &__heading {
@@ -305,13 +419,13 @@
     @media screen and (max-width: 1230px) {
       font-size: 28px;
       margin-bottom: 33px;
-      margin-top: -65px;
+      margin-top: -10px;
     }
 
     @media screen and (max-width: 768px) {
       font-size: 22px;
       margin-bottom: 26px;
-      margin-top: 186px;
+      margin-top: 247px;
     }
   }
 
